@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Think For You -- Room 5</title>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!----webfonts--->
+		<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css">
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#">Think For you -- Airbnb</a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="Home.html">Home </a></li>
+								<li class="page-scroll"><a href="#Pics" class="scroll">Pics</a></li>
+								<li class="page-scroll"><a href="#Analysis" class="scroll">Analysis</a></li>
+								<li class="page-scroll"><a href="#Score" class="scroll">Score</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			
+			<!---Room Choices--->
+			<div id="Pics" class="Pics">
+				<div id="work1" class="container">
+					<div class="head-one text-center">
+					  <h2>Detailed Pictures</h2>
+					  <span> </span>
+					</div>
+					<!---works--->
+					<!---images-hover-effects--->
+					<script src="js/jquery.hoverGrid.js"></script>
+					<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+					<script type="text/javascript">
+					    $(document).ready(function() {
+					      $('#whatever').hoverGrid();
+					    });
+					</script>
+					<!---images-hover-effects--->
+					
+					<div class="works">
+							<div id="whatever">
+								<div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r5_1.jpg" title="name" />
+										<div class="caption" style="display: none;">
+											<a href="images/r5_1.jpg">Click to see Full Picture</a>
+								        </div>
+								    </div>  
+							    </div>  
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r5_2.jpg" title="name" />
+										<div class="caption" style="display: none;">
+											<a href="images/r5_2.jpg">Click to see Full Picture</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r5_3.jpg" title="name" />
+										<div class="caption" style="display: none;">
+											<a href="images/r5_3.jpg">Click to see Full Picture</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r5_4.jpg" title="name" />
+										<div class="caption" style="display: none;">
+											<a href="images/r5_4.jpg">Click to see Full Picture</a>
+									    </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r5_5.jpg" title="name" />
+										<div class="caption" style="display: none;">
+											<a href="images/r5_5.jpg">Click to see Full Picture</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r5_6.jpg" title="name" />
+										<div class="caption" style="display: none;">
+											<a href="images/r5_6.jpg">Click to see Full Picture</a>
+								        </div>
+								    </div>  
+							    </div> 
+							    <div class="clearfix"> </div>               
+							</div>
+					</div>
+					 <div class="clearfix"> </div>   
+				</div>
+			</div>
+			<!---//Room Choices--->
+		
+		
+		
+					
+			<div id="Analysis" class="Analysis">
+				<div class="container">
+					<div class="head-one text-center team-head">
+						<h2>Comment Analysis</h2>
+						<span> </span>
+						<p>In this part, you can input one-sentence comment in Chinese. We will return the analysis results based on our trained model.  </p>
+						<div class="col-md-12 contact-form">
+							<input id = "t1" type = "text" value = "Example: 我觉得老板人很好，位置真的很差，网络信号也很差，根本无法上网，隔音很好，完全听不到旁边的声音，卫生间很脏，价格还贵" >
+							<input type = "submit" value = "Send" onclick = "myFunction1()"/>
+							<br />
+							<br />
+							<iframe src="images/white.png" frameborder = "0" style="display:none" width="100%" height="600" id = 'result'></iframe>
+							<script>
+								function myFunction1()
+								{
+									text = document.getElementById('t1').value
+									Room = 'Room_5'
+      								var result = document.getElementById('result')
+      								result.src = "/analysis/" + text + "/" + Room
+									result.style.display = "block";
+								}
+							</script>
+						</div>
+					</div>	
+				</div> 
+			</div>	
+			<!---Lots of things to do --->
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<!---Score--->
+			<div id="Score" class="Score">
+				<div class="container">
+					<div class="head-one text-center team-head">
+					<h2>Overall Performance</h2>
+					<span> </span>
+						<div>
+							<script>
+								function myFunction2()
+								{
+									Room = 'Room_5'
+      								var grade = document.getElementById('grade')
+      								grade.src = "/score/" + Room
+									grade.style.display = "block";
+								}
+							</script>
+							<iframe src="images/white.png" frameborder="0" style="display:none" width="100%" height="600" id='grade'></iframe>
+							<INPUT TYPE="button" value="Overall Performance" onclick="myFunction2()">
+						</div>
+					</div>
+					<div class="head-one text-center team-head">
+						<h2>Comparison</h2>
+						<span> </span>
+						<p>You can choose the another room, and we will return the comparison result.</p>
+						<input type="button" value="Room 1" id="R1" onclick="myFunction3('1')" />
+						<input type="button" value="Room 2" id="R2" onclick="myFunction3('2')" />
+						<input type="button" value="Room 3" id="R3" onclick="myFunction3('3')" />
+						<input type="button" value="Room 4" id="R4" onclick="myFunction3('4')" />
+						<input type="button" value="Room 6" id="R6" onclick="myFunction3('6')" />
+						<input type="button" value="Room 7" id="R7" onclick="myFunction3('7')" />
+						<input type="button" value="Room 8" id="R8" onclick="myFunction3('8')" />
+						<input type="button" value="Room 9" id="R9" onclick="myFunction3('9')" />
+						<div>
+							<script>
+								function myFunction3(num) {
+									Room_C = 'Room_' + num
+									Room = 'Room_5'
+									var compare = document.getElementById('compare')
+									compare.src = "/comparison/" + Room + "/" + Room_C
+									compare.style.display = "block";
+								}
+							</script>
+							<iframe src="images/white.png" frameborder="0" style="display:none" width="100%" height="600" id='compare'></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---//Score--->
+			 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!---footer--->
+			<div class="footer">
+				<div class="container">
+					<div class="footer-left"> </div>
+					<div class="footer-right">
+						<p>Copyright &copy; 2018. Chen Ziyang </p>
+						<script type="text/javascript">
+							$(document).ready(function() {
+								/*
+								var defaults = {
+									containerID: 'toTop', // fading element id
+									containerHoverID: 'toTopHover', // fading element hover id
+									scrollSpeed: 1200,
+									easingType: 'linear' 
+								};
+								*/
+								
+								$().UItoTop({ easingType: 'easeOutQuart' });
+								
+							});
+						</script>
+							<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!---//footer--->
+		</div>
+
+</body>
+</html>

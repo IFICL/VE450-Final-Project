@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Think For You</title>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!----webfonts--->
+		<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css">
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#">Think For you -- Airbnb</a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li class="page-scroll"><a href="#Rooms" class="scroll">Room Choices</a></li>
+								<li class="page-scroll"><a href="#About" class="scroll">About Us</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----banner---->
+			<div class="banner text-center">
+				<div class="container">
+					<div class="banner-info">
+						<h1><span>let us make</span> your lives easier</h1>
+						<p>We help you make choices in Airbnb much simple.</p>
+						<label class="page-scroll"><a class="big-btn scroll" href="#work1"><span> </span></a></label>
+					</div>
+				</div>
+			</div>
+			<!--//banner---->
+			<!---Room Choices--->
+			<div id="Rooms" class="Rooms">
+				<div id="work1" class="container">
+					<div class="head-one text-center">
+					  <h2>Room Choices</h2>
+					  <span> </span>
+					  <p>Here you can find the rooms from Airbnb. &nbsp;You can see the detail information of these rooms by clicking the thumbnails below.</p>
+					</div>
+					<!---works--->
+					<!---images-hover-effects--->
+					<script src="js/jquery.hoverGrid.js"></script>
+					<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+					<script type="text/javascript">
+					    $(document).ready(function() {
+					      $('#whatever').hoverGrid();
+					    });
+					</script>
+					<!---images-hover-effects--->
+					
+					<div class="works">
+							<div id="whatever">
+								<div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r1_1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>Room 1</h2>
+								           	<a href="Room1.html">Click to see more information</a>
+								        </div>
+								    </div>  
+							    </div>  
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r2_1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>Room 2</h2>
+								           	<a href="Room2.html">Click to see more information</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r3_1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+											<h2>Room 3</h2>
+											<a href="Room3.html">Click to see more information</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r4_1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+											<h2>Room 4</h2>
+											<a href="Room4.html">Click to see more information</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r5_1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+											<h2>Room 5</h2>
+											<a href="Room5.html">Click to see more information</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r6_1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>Room 6</h2>
+								           	<a href="Room6.html">Click to see more information</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r7_1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+											<h2>Room 7</h2>
+											<a href="Room7.html">Click to see more information</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r8_1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+											<h2>Room 8</h2>
+											<a href="Room8.html">Click to see more information</a>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/r9_1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+											<h2>Room 9</h2>
+											<a href="Room9.html">Click to see more information</a>
+								        </div>
+								    </div>  
+							    </div>  
+							    <div class="clearfix"> </div>               
+							</div>
+					</div>
+					 <div class="clearfix"> </div>   
+					</div>
+				</div>
+					<!---//Room Choices--->
+					<!---About Us--->
+					<div id="About" class="About">
+						<div class="container">
+							<div class="head-one text-center team-head">
+							  <h2>About US</h2>
+							  <span> </span>
+							  <p>We are a team from SJTU-JI. This website is our capstone project which is aimed at to use NLP and aspect level sentiment analysis to design an Evaluation system for the Rooms in Airbnb. </p>
+							
+								<p> The users can give the comments to those rooms and we can return the analysis results. And we can show a radar chart for each room to make your choice easier. </p>
+							</div>
+							
+					</div>
+					<!---//About Us--->
+					<!---footer--->
+					<div class="footer">
+						<div class="container">
+							<div class="footer-left"> </div>
+							<div class="footer-right">
+							  <p>Copyright &copy; 2018. Chen Ziyang </p>
+							  <script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<!---//footer--->
+				</div>
+
+</body>
+</html>
